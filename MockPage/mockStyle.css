@@ -7,8 +7,9 @@
 .sidebox1{
     border: 4px solid black;
     height: 2500px;
-    width: 500px;
+    width: 525px;
     float: left;
+    background-color:wheat;
 
 
 }
@@ -25,8 +26,8 @@
 
 .Milkcard{
 
-    width: 250px;
-    height: 250px;
+    width: 500px;
+    height: 350px;
     border: 3px solid black;
     background-image:url(DairyPic.jfif);
     
@@ -34,10 +35,11 @@
  .DairyText{
      text-align:center;
      color:mediumblue;
+     font-size:40px;
  }
  .Meats{
-     width:250px;
-     height:250px;
+     width:500px;
+     height:350px;
      border: 3px solid black;
      background-image: url(MeatPic.jpg);
      
@@ -47,5 +49,46 @@
 
      text-align:center;
      color:aliceblue;
-
+     font-size:40px;
  }
+
+.Fruits {
+
+width:500px;
+height:350px;
+border:3px solid black;
+background-image:url(fruits.jpg);
+
+
+
+}
+
+
+.FruitText{
+    text-align:center;
+    color:black;
+    font-size:40px;
+}
+
+.vegatable{
+    width:500px;
+    height:350px;
+    border:3px solid black;
+    background-image:url(Vega.jpg);
+
+
+
+
+}
+
+.vegaText{
+
+    text-align: center;
+    color:grey;
+    font:bold;
+    font-size:40Px;
+}
+
+.DairyButton{
+    align-items:center;
+}
