@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeaderComponent } from './components/shared/header/header.component';
@@ -13,6 +13,9 @@ import { AppRoutingModule, } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgModel } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +27,16 @@ import { RegisterComponent } from './register/register.component';
     FiltersComponent,
     FoodListComponent,
     PagenotfoundComponent,
+    LoginComponent
+    
+    
     
   ],
   imports: [
-    
+    NgModel,
+    FormsModule,
     BrowserModule,
+    ReactiveFormsModule,
    RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
       {path: 'register', component: RegisterComponent},
@@ -39,3 +47,21 @@ import { RegisterComponent } from './register/register.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+@Directive({
+  selector: '[attr]',
+  exportAs:"ngForm"
+  
+})
+export class NgForm{
+
+}
+
+@Directive({
+  selector: '[attr]',
+  exportAs:"ngModel"
+  
+})
+export class ngModel {
+
+}
